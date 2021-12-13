@@ -1,71 +1,70 @@
 /* 
-Author : Showman Das
-Theme : Restaurant Food Order
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
 */
 
-
-/* universal css */
+/* CSS for All */
 *{
     margin: 0 0;
     padding: 0 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .container{
-    /* border: 1px solid red; */
     width: 80%;
     margin: 0 auto;
     padding: 1%;
-    /* text-align: center; */
 }
-
 .img-responsive{
-    /* border: 1px solid black; */
     width: 100%;
 }
 .img-curve{
     border-radius: 15px;
 }
-.txt-right{
+
+.text-right{
     text-align: right;
 }
-.txt-center{
+.text-center{
     text-align: center;
 }
-.txt-white{
-    color: #fff;
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
 }
 
 .clearfix{
     clear: both;
     float: none;
 }
+
 a{
+    color: #ff6b81;
     text-decoration: none;
-    color: #e74c3c;
 }
 a:hover{
-    color: #e67e22;
+    color: #ff4757;
 }
 
 .btn{
     padding: 1%;
-    font-size: 1rem;
     border: none;
+    font-size: 1rem;
     border-radius: 5px;
 }
 .btn-primary{
-    background-color: #e74c3c;
-    color: #fff;
+    background-color: #ff6b81;
+    color: white;
     cursor: pointer;
 }
 .btn-primary:hover{
-    background-color: #e67e22;
-    color: #fff;
+    color: white;
+    background-color: #ff4757;
 }
 h2{
-    color: #2c3e50;
+    color: #2f3542;
     font-size: 2rem;
     margin-bottom: 2%;
 }
@@ -80,32 +79,41 @@ h3{
     bottom: 50px;
     left: 40%;
 }
-/* css for navbar section */
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
 .logo{
-    /* border: 1px solid black; */
-    width: 12%;
+    width: 10%;
     float: left;
 }
-
-.menubar{
+.menu{
     line-height: 60px;
 }
-
-.menubar ul{
+.menu ul{
     list-style-type: none;
 }
 
-.menubar li{
+.menu ul li{
     display: inline;
     padding: 1%;
     font-weight: bold;
 }
 
+
+/* CSS for Food SEarch Section */
+
 .food-search{
-    background-image: url('../images/bg.jpg');
+    background-image: url(../images/bg.jpg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 7% 0;
 }
 
@@ -113,14 +121,16 @@ h3{
     width: 50%;
     padding: 1%;
     font-size: 1rem;
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
 }
 
-/* css for categories */
+
+/* CSS for Categories */
 .categories{
     padding: 4% 0;
 }
+
 .box-3{
     width: 28%;
     float: left;
@@ -128,43 +138,42 @@ h3{
 }
 
 
-/* css for food menu  */
-
+/* CSS for Food Menu */
 .food-menu{
-    background: #ecf0f1;
+    background-color: #ececec;
     padding: 4% 0;
 }
 .food-menu-box{
-    /* border: 1px solid #000; */
     width: 43%;
     margin: 1%;
     padding: 2%;
     float: left;
-    background: #fff;
+    background-color: white;
     border-radius: 15px;
 }
 
 .food-menu-img{
     width: 20%;
-    /* height: 200px; */
     float: left;
 }
+
 .food-menu-desc{
     width: 70%;
     float: left;
     margin-left: 8%;
 }
+
 .food-price{
     font-size: 1.2rem;
     margin: 2% 0;
 }
 .food-detail{
     font-size: 1rem;
-    color: #7f8c8d;
+    color: #747d8c;
 }
 
-/* css for social */
 
+/* CSS for Social */
 .social ul{
     list-style-type: none;
 }
@@ -172,6 +181,7 @@ h3{
     display: inline;
     padding: 1%;
 }
+
 /* for Order Section */
 .order{
     width: 50%;
@@ -192,42 +202,49 @@ h3{
 
 
 
-/* css for mobile responsive  */
+/* CSS for Mobile Size or Smaller Screen */
 
 @media only screen and (max-width:768px){
     .logo{
-        /* border: 1px solid black; */
-        width: 50%;
+        width: 80%;
         float: none;
-        margin: 0 auto;
+        margin: 1% auto;
     }
-    .menubar ul{
+
+    .menu ul{
         text-align: center;
     }
-    .food-search{
-        padding: 10% 0;
-    }
-    .categories{
-        padding: 20% 0;
-    }
+
     .food-search input[type="search"]{
         width: 90%;
         padding: 2%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
     }
     h2{
-        margin-bottom: 5%;
-    }
-    .btn{
-        width: 90%;
+        margin-bottom: 10%;
     }
     .box-3{
-        width: 95%;
-        margin: 2% auto;
+        width: 100%;
+        margin: 4% auto;
     }
+
     .food-menu{
-        padding: 5% 0;
+        padding: 20% 0;
     }
+
     .food-menu-box{
         width: 90%;
         padding: 5%;
@@ -235,5 +252,8 @@ h3{
     }
     .social{
         padding: 5% 0;
+    }
+    .order{
+        width: 100%;
     }
 }
