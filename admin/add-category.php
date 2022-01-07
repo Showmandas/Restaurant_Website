@@ -80,7 +80,8 @@ if(isset($_POST['submit'])){
    if(isset($_FILES['image']['name'])){
        $image_name=$_FILES['image']['name'];
 
-       //auto rename image
+       if($image_name!=''){
+//auto rename image
        //get the extensionof our image(jpg,png,gif,etc)
        $ext=end(explode('.',$image_name));
 
@@ -96,6 +97,8 @@ if(isset($_POST['submit'])){
         header("location:".SITEURL."admin/add-category.php");
        die();
     }
+       }
+       
    }else{
        //don't upload image and set the image_name as blank
        $image_name="";

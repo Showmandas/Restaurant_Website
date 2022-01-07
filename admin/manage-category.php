@@ -12,6 +12,30 @@
                 echo $_SESSION['add'];//display session message
                 unset($_SESSION['add']);//remove session message
         }
+        if(isset($_SESSION['remove'])){
+                echo $_SESSION['remove'];//display session message
+                unset($_SESSION['remove']);//remove session message
+        }
+        if(isset($_SESSION['delete'])){
+                echo $_SESSION['delete'];//display session message
+                unset($_SESSION['delete']);//remove session message
+        }
+        if(isset($_SESSION['no-category-found'])){
+                echo $_SESSION['no-category-found'];//display session message
+                unset($_SESSION['no-category-found']);//remove session message
+        }
+        if(isset($_SESSION['update'])){
+                echo $_SESSION['update'];//display session message
+                unset($_SESSION['update']);//remove session message
+        }
+        if(isset($_SESSION['upload'])){
+                echo $_SESSION['upload'];//display session message
+                unset($_SESSION['upload']);//remove session message
+        }
+        if(isset($_SESSION['failed-remove'])){
+                echo $_SESSION['failed-remove'];//display session message
+                unset($_SESSION['failed-remove']);//remove session message
+        }
         ?>
         <br><br>
 
@@ -58,8 +82,8 @@
                                     
                                     ?></td>
                                     <td>
-                              <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">update Category</a>
-                                <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">delete Category</a>       
+                              <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>" class="btn-secondary">update Category</a>
+                                <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name;?>" class="btn-danger">delete Category</a>       
                         </td>
                 </tr>
 
